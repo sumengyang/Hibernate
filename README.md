@@ -1,7 +1,7 @@
 # Hibernate
 Hibernate框架简述
 
-Hibernate的核心组件
+一、Hibernate的核心组件
 
 在基于MVC设计模式的JAVA WEB应用中，Hibernate可以作为模型层/数据访问层。它通过配置文件(hibernate.properties或hibernate.cfg.xml)和映射文件(***.hbm.xml)把JAVA对象或PO(Persistent Object,持久化对象)映射到数据库中的数据库，然后通过操作PO，对数据表中的数据进行增，删，改，查等操作。
 
@@ -17,7 +17,8 @@ d)Query接口：用来对PO进行查询操。它可以从Session的createQuery()
 
 e)Transaction接口：用来管理Hibernate事务，它主要方法有commit()和rollback()，可以从Session的beginTrancation()方法生成。
 
-Persistent Object
+
+二、Persistent Object
 
 持久化对象可以是普通的Javabeans,惟一特殊的是它们与（仅一个）Session相关联。JavaBeans在Hibernate中存在三种状态：
 
@@ -27,7 +28,7 @@ Persistent Object
 
 3.脱管状态(detached):在这个Session被关闭的同时，这个对象也会脱离持久化状态，就变成脱管状态(Detached Object)，可以被应用程序的任何层自由使用，例如可以做与表示层打交道的数据舆对象(Data Transfer Object)。
 
-Hibernate的运行过程
+三、Hibernate的运行过程
 
 Hibernate的运行过程如下：
 
